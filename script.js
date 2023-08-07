@@ -18,17 +18,13 @@ function(){
     }else if(guessNumber === secretNumber){
         document.querySelector('.message').textContent = 'Correct Number 🏆';
         document.querySelector('.highscore').textContent = scorePoint;
-        //document.querySelector('.scorePoint').textContent = secretNumber;
+        document.querySelector('.number').textContent = secretNumber;
     }
 });
 
 document.querySelector('.again').addEventListener('click',
 function(){
-    scorePoint = 20;
-    document.querySelector('.score').textContent = scorePoint;
-    console.log('Ciao');
-    console.log('Ciao');
-    
-
-    
+    document.querySelector('.score').textContent = 20;
+    document.querySelector('.number').textContent = '?';
+    document.querySelector('.message').textContent = 'Start Guessing';
 });
